@@ -118,7 +118,7 @@ function validatedHeight() {
     dimensions.textContent = `Required: ${PRINTER_WIDTH} px wide · ${MIN_HEIGHT}–${MAX_HEIGHT} px tall`;
     showError(
       `receipt.height must be a whole number from ${MIN_HEIGHT} to ${MAX_HEIGHT}. ` +
-      `It is currently ${JSON.stringify(receipt.height)}. Nothing can export until this is fixed.`
+        `It is currently ${JSON.stringify(receipt.height)}. Nothing can export until this is fixed.`,
     );
     setStatus("Invalid dimensions", "bad");
     return null;
